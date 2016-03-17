@@ -1,0 +1,416 @@
+// out: C:/Users/ANTEK/Desktop/CUDA/css/main.css, sourcemap: true, compress: true
+// P STANDS FOR PAGE
+@violet-mainP: #87509C;
+@button-mainP: #EB7D4B;
+@mint-servicesP-and-buttons: #17C2A4;
+@whiteish-meet: #E7F1F8;
+@meetblueish-font: #3C4761;
+@meetSeaFont: #65C7EA;
+@meetParagraph: #97A0AF;
+@creme-portfolioP: #FFDD99;
+@pink-aboutUsP: #D74680;
+@blue-getInTouchP: #3C5499;
+@btnGetinTouch: #30BAE7;
+@whitish-font: #F7F3EA;
+@social: #BDD1DF;
+@whiteSocial: #FFFFFF;
+@portfolioFont: #393939;
+@smallFontPeople: #F0AB8F;
+@darkInputBlue: #273A71;
+@socialStripe: #344B8E;
+.buttonBorder(@radius) {
+  border: 2px solid transparent;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+.content-columns(@width; @count; @gap) {
+  -webkit-column-width: @width;
+  -moz-column-width: @width;
+  column-width: @width;
+  -webkit-column-count: @count;
+  -moz-column-count: @count;
+  column-count: @count;
+  -webkit-column-gap: @gap;
+  -moz-column-gap: @gap;
+  column-gap: @gap;
+}
+//////////////////////////////////// END OF LESS STUFF//////////////////////////
+body {
+  font-family: 'Titillium Web', sans-serif;
+  color: @whitish-font;
+  .btnMint {
+    background-color: @mint-servicesP-and-buttons;
+    .buttonBorder(5px);
+    font-weight: 600;
+    color: white;
+    width: 270px;
+    padding: 1% 0;
+    margin: 2% auto;
+    font-size: 1.35em;
+    box-shadow: 0 7px #14A58C;
+  }
+  .row.gutter {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .row.gutter [class*='col-']:not(:first-child),
+  .row.gutter [class*='col-']:not(:last-child) {
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+  .header {
+    .myNav {
+      padding: 30px;
+      background-color: rbga(255,255,255,0);
+    }
+    .navbar-brand {
+      padding: 15px;
+    }
+    .navbar {
+      font-size: 1.5rem;
+      color: white;
+      background-color: transparent;
+      background: transparent;
+      border-color: transparent;
+      a {
+        text-align: center;
+        display: inline-block;
+        height: 50px;
+        width: 85px;
+        color: white;
+        font-size: 1.5rem;
+        &:hover {
+          color: white;
+          .buttonBorder(8px);
+          background-color: #643A79 !important;
+        }
+      }
+    }
+  }
+  //<--------//////////////////////////////// NAV END
+  .home {
+    background-color: @violet-mainP;
+    width: 100%;
+    padding-bottom: 12%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 550px;
+    .jumbotron {
+      background-color: @violet-mainP;
+      margin: 14% auto;
+      text-align: center;
+      h2 {
+        margin: 0 auto;
+        font-size: 4.5rem;
+        line-height: 1.2;
+        font-weight: 600;
+      }
+      .buttonMainP {
+        color: white !important;
+        background-color: @button-mainP;
+        font-weight: 600;
+        width: 260px;
+        font-size: 2.5rem;
+        height: 70px;
+        margin: 2% auto;
+        box-shadow: 0 7px #C86A40;
+        .buttonBorder(4px);
+      }
+    }
+  }
+  //<--------/////////////////////////////// HOME END
+  .services {
+    background: @mint-servicesP-and-buttons;
+    text-align: center;
+    padding-bottom: 9%;
+    .container {
+      .row {
+        img {
+          padding-top: 15%;
+          margin: 0 auto;
+          height: 160px;
+        }
+        h2.servicesH2 {
+          font-weight: 600;
+          font-size: 3rem;
+        }
+        h1 {
+          padding-top: 3%;
+          font-weight: 600;
+          font-size: 4.5rem;
+          letter-spacing: 3px;
+        }
+        p {
+          margin: 2% auto;
+        }
+        .p2 {
+          margin: 0 auto;
+          text-align: center;
+          width: 170px;
+          padding-top: 7%;
+        }
+        .dash {
+          background: #444;
+          height: 3px;
+          opacity: 0.3;
+          width: 80px;
+          padding-right: 90px;
+          margin: 1% auto;
+        }
+      }
+    }
+  }
+  //<--------/////////////////////////////// SERVICES  END
+  .meetTeam {
+    text-align: center;
+    background: @whiteish-meet;
+    padding-bottom: 7%;
+    h3,
+    h1 {
+      color: @meetblueish-font;
+      text-align: center;
+      margin: 0 auto;
+      font-weight: 700;
+      padding-top: 5%;
+    }
+    h1 {
+      letter-spacing: 3px;
+      margin: 0 auto;
+    }
+    .dash {
+      background: #444;
+      height: 3px;
+      opacity: 0.3;
+      width: 80px;
+      padding-right: 90px;
+      margin: 1% auto;
+    }
+    p.description {
+      font-size: 1.25em;
+      color: @meetblueish-font;
+      margin: 0 auto;
+      padding-top: 3%;
+    }
+    img {
+      padding-top: 10%;
+      margin: 0 auto;
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      opacity: 0.7;
+    }
+    h5 {
+      color: @meetSeaFont;
+      margin: 3% auto;
+    }
+    p {
+      margin: 0 auto;
+      padding-top: 7%;
+      color: @meetParagraph;
+      text-align: center;
+    }
+    .roundedSocials {
+      width: 100%;
+      height: 40px;
+      text-align: center;
+      margin: auto;
+      div.social {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin: 15% 2% 0;
+        float: left;
+        background: @social;
+        .fa {
+          position: relative;
+          top: 22%;
+          font-size: 20px;
+          color: @whiteSocial;
+        }
+      }
+    }
+  }
+  //<--------/////////////////////////////// MEET TEAM END
+  .skills {
+    padding: 7% 0;
+    background: #FFFFFF;
+    text-align: center;
+    color: @meetblueish-font;
+    h2,
+    canvas {
+      margin: 0 auto;
+    }
+    h1 {
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+    p {
+      margin: 4% auto;
+    }
+    .dash {
+      background: #444;
+      height: 3px;
+      opacity: 0.3;
+      width: 80px;
+      padding-right: 90px;
+      margin: 1% auto;
+    }
+  }
+  //<--------/////////////////////////////// SKILLS END
+  .portfolio {
+    background: @creme-portfolioP;
+    text-align: center;
+    color: @portfolioFont;
+    padding-bottom: 5%;
+    h1 {
+      margin: 0 auto;
+      padding-top: 5%;
+      font-weight: 700;
+      letter-spacing: 4px;
+    }
+    .dash {
+      background: #444;
+      height: 3px;
+      opacity: 0.3;
+      width: 65px;
+      padding-right: 90px;
+      margin: 1% auto 3%;
+    }
+    p {
+      margin: 0 auto 3%;
+      text-align: center;
+    }
+    .btn-group {
+      padding-bottom: 2%;
+      button.btn-default.active {
+        background-color: #FFFFFF;
+      }
+      button.btn-default {
+        .buttonBorder(5px) !important;
+        background-color: #EBC985;
+        margin: 0 4px;
+      }
+    }
+    //////////////////////////////////////////// BTN GROUP END
+    img {
+      width: 90%;
+      height: 350px;
+      margin-top: 2%;
+    }
+    h3 {
+      position: relative;
+      padding-bottom: 5%;
+      margin: 2% auto;
+    }
+    .btnMint.showProj:hover {
+      background-color: @mint-servicesP-and-buttons !important;
+      border-color:@mint-servicesP-and-buttons !important;
+      color:white;
+    }
+  }
+  //<--------/////////////////////////////// PORTFOLIO END
+  .people {
+    background-color: @pink-aboutUsP;
+    color: white;
+    text-align: center;
+    padding-bottom: 5%;
+    h1 {
+      margin: 0 auto;
+      padding-top: 7%;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+    h4 {
+      font-size: 1.25em;
+    }
+    .dash {
+      background: #444;
+      height: 3px;
+      opacity: 0.3;
+      width: 65px;
+      padding-right: 90px;
+      margin: 2% auto 3%;
+    }
+    .img-responsive {
+      margin: 1% auto;
+      height: 125px;
+    }
+    .helper:after {
+      content: '"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam placeat neque dolorem consectetur, eius veritatis repellendus consequuntur voluptatem laborum.."';
+      font-style: italic;
+      text-align: left;
+    }
+    h3 {
+      font-weight: 600;
+      margin: 1% auto;
+    }
+    p {
+      margin: 1% auto;
+      color: @smallFontPeople;
+    }
+  }
+  //<--------/////////////////////////////// PEOPLE ABOUT US END
+  .inTouch {
+    background-color: @blue-getInTouchP;
+    text-align: center;
+    h1 {
+      font-weight: 700;
+      letter-spacing: 3px;
+      margin: 3% auto 0;
+    }
+    .dash {
+      background: #444;
+      height: 3px;
+      opacity: 0.3;
+      width: 65px;
+      padding-right: 90px;
+      margin: 1% auto 3%;
+    }
+    p {
+      margin: 2% auto 3%;
+    }
+    #name,
+    #email {
+      width: 100%;
+      background-color: @darkInputBlue;
+      height: 40px;
+      margin: 2% auto;
+      .buttonBorder(5px);
+    }
+    #message {
+      .buttonBorder(5px);
+      background-color: @darkInputBlue;
+      margin: 1% auto;
+      width: 100%;
+      height: 200px;
+    }
+    div.btnMint {
+      background-color: @btnGetinTouch;
+      border: 2px solid transparent;
+      &:hover {
+        background-color: @btnGetinTouch !important;
+        border: 2px solid transparent !important;
+        color: white !important;
+      }
+    }
+    .socialStripe {
+      background-color: @socialStripe !important;
+      a {
+        font-weight: 600;
+        text-decoration: none;
+        color: white;
+        font-size: 3rem;
+        &:hover {
+          color: @mint-servicesP-and-buttons;
+        }
+      }
+    }
+  }
+  //<--------/////////////////////////////// GET IN TOUCH  END
+}
+@media only screen and (max-width : 480px) {}
